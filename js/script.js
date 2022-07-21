@@ -91,10 +91,8 @@ function inputverificar() {
   var inputPalavra = document.querySelector("#input-texto");
   inputPalavra.addEventListener("keypress", function (e) {
     var keyCode = (e.keyCode ? e.keyCode : e.which);
-console.log(keyCode);
     if ((keyCode > 47 && keyCode < 65) || (keyCode > 122 && keyCode < 231)
   || (keyCode > 231)){
-        console.log(keyCode);
       e.preventDefault();
     }
   });
