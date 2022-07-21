@@ -32,19 +32,19 @@ document.getElementById('btn-descriptografar').onclick = (e) => {
   }
 }
 
-// captura o id no momento do click e limpa a entrada de texto
-document.getElementById('btn-limpar').onclick = (e) => {
-  e.preventDefault();
-  mensagem.value = "";
-  home();
-}
-
-// captura o id no momento do click e faz a validação de copiar o texto
+// caputura o id no momento do click e faz a validação de copiar o texto
 document.getElementById('btn-copiar').onclick = (e) => {
   e.preventDefault();
   const mensagem = document.querySelector("#mensagem");
   mensagem.select();
-  navigator.clipboard.writeText(mensagem.value) /* Uso do Clipboard API */
+  navigator.clipboard.writeText(mensagem.value)
+  mensagem.value = "";
+  home();
+}
+
+// captura o id no momento do click e limpa a entrada de texto
+document.getElementById('btn-limpar').onclick = (e) => {
+  e.preventDefault();
   mensagem.value = "";
   home();
 }
@@ -76,7 +76,7 @@ function decodificar(stringDecriptada) {
 //manipula o dom para que alguns componentes apareçam e desapareçam da tela
 function aparece() {
   document.getElementById("div-desaparece").style.display = 'none';
-  document.getElementById("div-aparece").style.display = 'block'; /*some*/
+  document.getElementById("div-aparece").style.display = 'block';
 }
 
 //manipula o dom para que alguns componentes apareçam e desapareçam da tela
@@ -84,6 +84,7 @@ function home() {
   document.getElementById("div-aparece").style.display = 'none';
   document.getElementById("div-desaparece").style.display = 'block';
 }
+
 
 //verifica qual foi o texto digitado pelo usuário
 function inputverificar() {

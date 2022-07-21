@@ -1,0 +1,1194 @@
+@media only screen and (min-width: 2301px) and (max-width: 2660px){
+  main{
+    height:100%;
+  }
+
+  .logo{
+    left:1rem;
+    width:8%;
+  }
+
+  .text-input{
+    top:8rem;
+    left:17.1rem;
+    width: 66rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    left:17.1rem;
+    top:35rem;
+  }
+
+  .botones-div{
+    top:38.5rem;
+    left:14.1rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    font-size:24px;
+    height:65px;
+    width:450px;
+  }
+
+  .message-box{
+    width: 40rem;
+    top: 1.5rem;
+    height:49rem;
+    left:106rem;
+  }
+  .message-box-div{
+    padding-top:0rem;
+    height:20rem;
+    padding-left:1rem;
+  }
+  .message-box-div img{
+    width:20rem;
+    align-items: center;
+    margin-left: 12%;
+    padding-left: 1.5rem;
+  }
+
+  .message-box-div h2{
+    text-align: center;
+    font-size:22px;
+    width:100%;
+    height:auto;
+  }
+
+  .message-box-div h3{
+    text-align: center;
+    font-size:22px;
+    width:100%;
+    height:auto;
+  }
+
+  .div-mensaje{
+    width: 34rem;
+    left:2.5rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar,  .btn-limpar {
+    width:34rem;
+    font-size:24px;
+    height: 60px;
+  }
+
+  .btn-copiar {
+    top:36rem;
+  }
+
+  .btn-limpar{
+    top:42rem;
+  }
+
+  .rodape-prin{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 64rem;
+    left: 11rem;
+  }
+
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 2210px) and (max-width: 2300px){
+  main{
+    height:100%;
+  }
+
+  .logo{
+    left:1rem;
+    width:8%;
+  }
+
+  .text-input{
+    top:8rem;
+    left:15.1rem;
+    width: 60rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    left:15.3rem;
+    top:35rem;
+  }
+
+  .botones-div{
+    top:38.5rem;
+    left:13rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    font-size:24px;
+    height:65px;
+    width:400px;
+  }
+
+  .message-box{
+    width: 32rem;
+    top: 1.5rem;
+    height:49rem;
+    left:94rem;
+  }
+  .message-box-div{
+    padding-top:0rem;
+    height:20rem;
+    padding-left:1rem;
+  }
+
+  .message-box-div img{
+    width:18rem;
+    align-items: center;
+    padding-left: 1.5rem;
+  }
+
+  .message-box-div h2{
+    text-align: center;
+    font-size:22px;
+    width:100%;
+    height:auto;
+  }
+
+  .message-box-div h3{
+    text-align: center;
+    font-size:22px;
+    width:100%;
+    height:auto;
+  }
+
+  .div-mensaje{
+    width: 27rem;
+    left:2.5rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar,  .btn-limpar {
+    width:27rem;
+    font-size:24px;
+    height: 60px;
+  }
+
+  .btn-copiar {
+    top:36rem;
+  }
+
+  .btn-limpar{
+    top:42rem;
+  }
+
+  .rodape-prin{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 64rem;
+    left: 11rem;
+  }
+
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1990px) and (max-width: 2200px){
+  main{
+    height:100%;
+  }
+
+  .logo{
+    left:1rem;
+    width:8%;
+  }
+
+  .text-input{
+    top:8rem;
+    left:13.1rem;
+    width: 60rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    left:13.3rem;
+    top:35rem;
+  }
+
+  .botones-div{
+    top:38.5rem;
+    left:11rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    font-size:24px;
+    height:65px;
+    width:400px;
+  }
+
+  .message-box{
+    width: 32rem;
+    top: 1.5rem;
+    height:49rem;
+    left:89rem;
+  }
+  .message-box-div{
+    padding-top:0rem;
+    height:20rem;
+    padding-left:1rem;
+  }
+
+  .message-box-div img{
+    align-items: center;
+    width:18rem;
+    padding-left: 1.5rem;
+  }
+
+  .message-box-div h2{
+    text-align: center;
+    font-size:22px;
+    width:100%;
+    height:auto;
+  }
+
+  .message-box-div h3{
+    text-align: center;
+    font-size:22px;
+    width:100%;
+    height:auto;
+  }
+
+  .div-mensaje{
+    width: 27rem;
+    left:2.5rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar,  .btn-limpar {
+    width:27rem;
+    font-size:24px;
+    height: 60px;
+  }
+
+  .btn-copiar {
+    top:36rem;
+  }
+
+  .btn-limpar{
+    top:42rem;
+  }
+
+  .rodape-prin{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 64rem;
+    left: 11rem;
+  }
+
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1941px) and (max-width: 1980ps){
+  main{
+    height:100%;
+  }
+
+  .logo{
+    left:1rem;
+    width:8%;
+  }
+
+  .text-input{
+    top:8rem;
+    left:11.1rem;
+    width: 58rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    left:11.3rem;
+    top:35rem;
+  }
+
+  .botones-div{
+    top:38.5rem;
+    left:9rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    font-size:24px;
+    height:65px;
+    width:370px;
+  }
+
+  .message-box{
+    width: 32rem;
+    top: 1.5rem;
+    height:49rem;
+    left:85rem;
+  }
+  .message-box-div{
+    padding-top:0rem;
+    height:20rem;
+    padding-left:1rem;
+
+
+  .message-box-div img{
+    align-items: center;
+    width:18rem;
+    padding-left: 1.5rem;
+  }
+
+  .message-box-div h2{
+    text-align: center;
+    font-size:22px;
+    width:100%;
+    height:auto;
+  }
+
+  .message-box-div h3{
+    text-align: center;
+    font-size:22px;
+    width:100%;
+    height:auto;
+  }
+
+  .div-mensaje{
+    width: 27rem;
+    left:2.5rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar,  .btn-limpar {
+    width:27rem;
+    font-size:24px;
+    height: 60px;
+  }
+
+  .btn-copiar {
+    top:36rem;
+  }
+
+  .btn-limpar{
+    top:42rem;
+  }
+
+  .rodape-prin{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 64rem;
+    left: 11rem;
+  }
+
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1710px) and (max-width: 1940px){
+  main{
+    height:100%;
+  }
+
+  .logo{
+    left:1rem;
+    width:8%;
+  }
+
+  .text-input{
+    top:8rem;
+    left:10.1rem;
+    width: 55rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    left:10.3rem;
+    top:35rem;
+  }
+
+  .botones-div{
+    top:38.5rem;
+    left:8rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    font-size:24px;
+    height:65px;
+    width:370px;
+  }
+
+  .message-box{
+    top: 1.5rem;
+    height:49rem;
+    left:75rem;
+  }
+  .message-box-div{
+    padding-top:0rem;
+    height:20rem;
+    padding-left:1rem;
+  }
+  .message-box-div img{
+    align-items: center;
+    width:18rem;
+    padding-left: 1.5rem;
+  }
+
+  .message-box-div h2{
+    text-align: center;
+    font-size:22px;
+    width:100%;
+    height:auto;
+  }
+
+  .message-box-div h3{
+    text-align: center;
+    font-size:22px;
+    width:100%;
+    height:auto;
+  }
+
+  .div-mensaje{
+    width: 23rem;
+    left:2.5rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar,  .btn-limpar {
+    height:64px;
+    font-size:24px;
+  }
+
+  .btn-copiar {
+    top:36rem;
+  }
+
+  .btn-limpar{
+    top:42rem;
+  }
+
+  .rodape-prin{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 64rem;
+    left: 11rem;
+  }
+
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1590px) and (max-width: 1700px){
+  main{
+    height:100%;
+  }
+
+  .logo{
+    left:1rem;
+    width:8%;
+  }
+
+  .text-input{
+    top:8rem;
+    left:9.1rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    left:9.3rem;
+    top:35rem;
+  }
+
+  .botones-div{
+    top:38.5rem;
+    left:7rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    font-size:24px;
+    height:65px;
+  }
+
+  .message-box{
+    top: 1.5rem;
+    height:49rem;
+    left:65rem;
+  }
+  .message-box-div{
+    padding-top:0rem;
+    height:20rem;
+    padding-left:1rem;
+  }
+
+  .message-box-div img{
+    align-items: center;
+    width:18rem;
+    padding-left: 1.5rem;
+  }
+  .btn-copiar{
+    top:36rem;
+    height:64px;
+    font-size:24px;
+  }
+  .div-mensaje{
+    width: 23rem;
+    left:2.5rem;
+    word-wrap: break-word;
+  }
+
+  .rodape-prin
+  {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 64rem;
+    left: 11rem;
+  }
+
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1224px) and (max-width: 1580px){
+  main{
+    height:100%;
+  }
+
+  .logo{
+    left:1rem;
+    width:8%;
+  }
+
+  .text-input{
+    top:8rem;
+    left:7.1rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    left:7.3rem;
+    top:35rem;  .message-box-div h2{
+    text-align: center;
+    font-size:22px;
+    width:100%;
+    height:auto;
+  }
+  }
+
+  .botones-div{
+    top:38.5rem;
+    left:5rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    font-size:24px;
+    height:65px;
+  }
+
+  .message-box{
+    top: 1.5rem;
+    height:49rem;
+    left:56rem;
+  }
+  .message-box-div{
+    padding-top:0rem;
+    height:20rem;
+    padding-left:1rem;
+  }
+  .message-box-div img{
+    width:18rem;
+    align-items: center;
+    padding-left: 1.5rem;
+  }
+  .btn-copiar{
+    top:36rem;
+    height:64px;
+    font-size:24px;
+  }
+  .div-mensaje{
+    width: 23rem;
+    left:2.5rem;
+    word-wrap: break-word;
+  }
+
+  .rodape-prin
+  {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 64rem;
+    left: 11rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1024px) and (max-width: 1223px){
+  main{
+    height:100%;
+  }
+
+  .logo{
+    left:1rem;
+    width:8%;
+  }
+
+  .text-input{
+    top:7rem;
+    left:7.1rem;
+    width: 62rem;
+    height: 19rem;
+    font-size:22px;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    left:7.3rem;
+    top:28rem;
+  }
+
+  .botones-div{
+    top:31rem;
+    left:5rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    font-size:22px;
+    height:65px;
+    width:  416px;
+  }
+
+  .message-box{
+    width:62rem;
+    left:7.1rem;
+    top:37rem;
+    padding:0;
+    height:25rem;
+  }
+
+  .message-box-div{
+    width:58rem;
+    padding-top:0rem;
+    height:20rem;
+    padding-left:1rem;
+  }
+
+  .message-box-div img{
+    display: none;
+  }
+
+  .message-box-div h2{
+    text-align: center;
+    font-size:22px;
+    width:100%;
+    height:auto;
+  }
+
+  .message-box-div h3{
+    text-align: center;
+    font-size:22px;
+    width:100%;
+    height:auto;
+  }
+
+  .div-mensaje{
+    width: 57rem;
+    left:2.5rem;
+    height:15rem;
+    font-size:22px;
+    top:35px;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar, .btn-limpar {
+    font-size:24px;
+    height:65px;
+    width:  395px;
+  }
+
+  .btn-copiar{
+    top:18rem;
+  }
+
+  .btn-limpar{
+    top:18rem;
+    left: 31rem;
+  }
+
+  .rodape-prin
+  {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 64rem;
+    left: 11rem;
+  }
+
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 760px) and (max-width: 800px){
+  main{
+    height:100%;
+  }
+
+  .logo{
+    top: 2rem;
+    left:0;
+    width:18%;
+  }
+
+  .text-input{
+    width:34rem;
+    height: 16rem;
+    font-size: 18px;
+    top:7rem;
+    left:11.1rem;
+  }
+
+  .form-group{
+    left:11.3rem;
+    top:24rem;
+  }
+
+  .botones-div{
+    top:26.5rem;
+    left:10rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar{
+    width: 235px;
+    font-size:18px;
+    height:60px;
+    margin: 0.5rem;
+  }
+
+  .message-box{
+    width:34rem;
+    left:11.1rem;
+    top:33rem;
+    padding:0;
+    height:33rem;
+  }
+
+  .message-box-div{
+    padding-top:1rem;
+    height:auto;
+    border-radius: 32px;
+    padding-left: 5.5rem;
+  }
+
+  .message-box-div img{
+    display: none;
+  }
+
+  .message-box-div h2{
+    font-size:18px;
+    width:80%;
+    margin: 0.5rem;
+    height:auto;
+  }
+
+  .message-box-div h2{
+    font-size:18px;
+    width:80%;
+    margin: 0.5rem;
+    height:auto;
+  }
+
+
+  .div-mensaje{
+    width:30rem;
+    height:17.5rem;
+    font-size: 18px;
+    top:35px;
+    left:.8rem;
+    flex: 1 1 auto;
+  }
+
+  .btn-copiar, .btn-limpar {
+    left: 1.4rem;
+    width:30rem;
+    height:65px;
+    font-size:18px;
+  }
+
+  .btn-copiar {
+    top:20.5rem;
+  }
+
+  .btn-limpar {
+    top:26rem;
+  }
+
+  .rodape-prin
+  {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 66rem;
+    left: 11rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 700px) and (max-width: 759px){
+  main{
+    height:100%;
+  }
+
+  .logo{
+    top: 2rem;
+    left:0;
+    width:18%;
+  }
+
+  .text-input{
+    width:34rem;
+    height: 16rem;
+    font-size: 18px;
+    top:7rem;
+    left:8.1rem;
+  }
+
+  .form-group{
+    left:8.3rem;
+    top:24rem;
+  }
+
+  .botones-div{
+    top:26.5rem;
+    left:7rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar{
+    width: 235px;
+    font-size:18px;
+    height:60px;
+    margin: 0.5rem;
+  }
+
+  .message-box{
+    width:34rem;
+    left:8.1rem;
+    top:33rem;
+    padding:0;
+    height:33rem;
+  }
+
+  .message-box-div{
+    padding-top:1rem;
+    height:auto;
+    border-radius: 32px;
+    padding-left: 5.5rem;
+  }
+
+  .message-box-div img{
+    display: none;
+  }
+
+  .message-box-div h2,h3{
+    font-size:18px;
+    width:80%;
+    margin: 0.5rem;
+    height:auto;
+  }
+
+  .div-mensaje{
+    width:30rem;
+    height:17.5rem;
+    font-size: 18px;
+    top:35px;
+    left:1.8rem;
+    flex: 1 1 auto;
+  }
+
+  .btn-copiar, .btn-limpar {
+    left: 1.4rem;
+    width:30rem;
+    height:65px;
+    font-size:18px;
+  }
+
+  .btn-copiar {
+    top:20.5rem;
+  }
+
+  .btn-limpar {
+    top:26rem;
+  }
+
+  .rodape-prin
+  {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 66rem;
+    left: 11rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 616px) and (max-width: 699px){
+  main{
+    height:100%;
+  }
+
+  .logo{
+    top: 2rem;
+    left:0;
+    width:18%;
+  }
+
+  .text-input{
+    width:34rem;
+    height: 16rem;
+    font-size: 18px;
+    top:7rem;
+    left:5.1rem;
+  }
+
+  .form-group{
+    left:5.3rem;
+    top:24rem;
+  }
+
+  .botones-div{
+    top:26.5rem;
+    left:4rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar{
+    width: 235px;
+    font-size:18px;
+    height:60px;
+    margin: 0.5rem;
+  }
+
+  .message-box{
+    width:34rem;
+    left:5.1rem;
+    top:33rem;
+    padding:0;
+    height:33rem;
+  }
+
+  .message-box-div{
+    padding-top:1rem;
+    height:auto;
+    border-radius: 32px;
+    padding-left: 5.5rem;
+  }
+
+  .message-box-div img{
+    display: none;
+  }
+
+  .message-box-div h2,h3{
+    font-size:18px;
+    width:80%;
+    margin: 0.5rem;
+    height:auto;
+  }
+
+  .div-mensaje{
+    width:30rem;
+    height:17.5rem;
+    font-size: 18px;
+    top:35px;
+    left:1.8rem;
+    flex: 1 1 auto;
+  }
+
+  .btn-copiar, .btn-limpar {
+    left: 1.4rem;
+    width:30rem;
+    height:65px;
+    font-size:18px;
+  }
+
+  .btn-copiar {
+    top:20.5rem;
+  }
+
+  .btn-limpar {
+    top:26rem;
+  }
+
+  .rodape-prin
+  {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 66rem;
+    left: 8rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 481px) and (max-width: 615px){
+  main{
+    height:100%;
+  }
+
+  .logo{
+    top: 3rem;
+    left:2.8rem;
+    width:18%;
+  }
+
+  .text-input{
+    width:34rem;
+    top:10rem;
+    left:5.1rem;
+  }
+
+  .form-group{
+    left:5.3rem;
+    top:30rem;
+  }
+
+  .botones-div{
+    top:32.5rem;
+    left:4rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar{
+    width: 280px;
+    font-size:24px;
+    height:65px;
+    margin: 0.5rem;
+  }
+
+  .message-box{
+    width:36rem;
+    left:4.3rem;
+    top:40rem;
+    padding:0;
+    height:100%
+  }
+  .message-box-div{
+    padding-top:1rem;
+    height:auto;
+    border-radius: 32px;
+    padding-left: 5.5rem;
+  }
+  .message-box-div h2,h3{
+    font-size:24px;
+    width:80%;
+    margin: 0.5rem;
+    height:auto;
+
+  }
+  .message-box-div img{
+    display: none;
+  }
+  .btn-copiar{
+    top:24rem;
+    width:32rem;
+    height:65px;
+    font-size:24px;
+  }
+  .div-mensaje{
+    height:auto;
+    left:2.5rem;
+    flex: 1 1 auto;
+  }
+  } */
+
+  /* -------------------------------------------------------------------------- */
+
+  @media only screen and (min-device-width : 300px) and (max-device-width : 480px){
+    main{
+      height:100%;
+    }
+
+    .logo{
+      top: 1rem;
+      left: -1.5rem;
+      width:25%;
+    }
+
+    .text-input{
+      width:20rem;
+      top:8rem;
+      left:1.5rem;
+      font-size: 22px;
+      word-wrap: break-word;
+
+
+      .form-group{
+        left:2.3rem;
+        top:24rem;
+      }
+
+      label{
+        font-size:12px;
+      }
+
+      .botones-div{
+        flex-direction: column;
+        top:25.5rem;
+        left:1.5rem;
+      }
+
+      .btn-criptografar,.btn-descriptografar{
+        width: 320px;
+        font-size:20px;
+        height:65px;
+        margin: 0.5rem;
+      }
+      .message-box{
+
+        width:20rem;
+        left:2rem;
+        top:37rem;
+        padding:0;
+        height:6rem;
+
+      }
+      .message-box-div{
+        padding-top:0.5rem;
+        height:auto;
+        border-radius: 32px;
+        padding-left: 1.5rem;
+      }
+      .message-box-div h2{
+        font-size:14px;
+        width:80%;
+        margin: 0.5rem;
+        height:100%;
+
+      }
+      .message-box-div h3{
+        font-size:12px;
+        width:80%;
+        margin: 0.5rem;
+        height:100%;
+
+      }
+      .message-box-div img{
+        display: none;
+      }
+      .btn-copiar{
+        top:8rem;
+        width: 320px;
+        height:62px;
+        font-size:20px;
+        left:-0.5rem;
+      }
+      .div-mensaje{
+        width: 17rem;
+        top: 0.5rem;
+        height:8rem;
+        left:1.5rem;
+        font-size: 14px;
+        word-wrap: break-word;
+      }
+    }

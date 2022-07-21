@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  background: #1E41FF;
+  background: #025aaf;
 }
 
 .main {
@@ -16,7 +16,7 @@
 
 .titulo {
   padding: 15px;
-  width: 30px;
+  width: 30vw; /* prenche a largura da tela */
   margin: auto;
 }
 
@@ -31,61 +31,62 @@
 .text-input {
   /* Digite seu texto */
   text-transform:lowercase;
-
-  position: absolute; /* The element is positioned relative to its first positioned (not static) ancestor element */
-  width: 700px;
-  height: 410px; /* altura do textarea */
-  left: 12%; /* movo o textarea */
-  margin-top: 10%;
+  /* The element is positioned relative to its first
+  positioned (not static) ancestor element */
+  position: absolute;
+  width: 600px;
+  height: 360px; /* altura do textarea */
+  left: 15%;
+  top: 125px;
 
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 1.6;
+  justify-content: baseline;
 
   outline-style: ridge;
 
   /* iNão deixa o usuário alterar o tamanho do textarea */
   resize: none;
 
-  /* Dark blue/dark-blue-300 */
   color: #FFFFFF;
-  background: #329D4D; /* onde o texto vai ser digitado */
+  background: #329D4D;
 }
 
-.text-input:focus { /* vai acontecer quando o textarea receber  o foco */
+::placeholder { color: #000080; }
+
+/* vai acontecer quando o textarea receber  o foco */
+.text-input:focus {
   outline: none;
 }
 
-::placeholder {
-  color: #000080;
-}
+/* img-alerta e "Apenas letras minúsculas e sem acento" */
+.form-group{
+  /* Assim que você atribuir a propriedade de CSS display: flex ao container,
+  ele passará a ser o que chamamos de flex container e todos seus filhos diretos,
+  por sua vez, serão os flex-itens. */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
 
-.form-group{ /* img-alerta e "Apenas letras minúsculas e sem acento" */
-/* Assim que você atribuir a propriedade de CSS display: flex ao container,
-ele passará a ser o que chamamos de flex container e todos seus filhos diretos,
-por sua vez, serão os flex-itens. */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-
-position: absolute;
-width: auto;
-height: 18px;
-margin-left:12%;
-margin-top:39%;
+  position: absolute;
+  width: auto;
+  height: 18px;
+  left: 15%;
+  top: 510px;
 }
 
 .img-alerta{
-  position: absolute; /* pode ser colocado em qualquer lugar da página */
+  position: absolute;
   left: 0%;
   right: 0%;
   top: 0%;
   bottom: 0%;
 }
 
-label { /* Apenas letras mipusculas... */
+label {
   position: static;
   width: auto;
   height: 18px;
@@ -93,13 +94,10 @@ label { /* Apenas letras mipusculas... */
   top: 0px;
   padding-left: 25px;
   font-weight: 600;
-
   font-family: Inter;
   font-style: normal;
   font-size:20px;
-  line-height: 100%; /* identical to box height, or 18px */
-
-  /* Gray/gray-300 */
+  line-height: 100%;
   color: #FFFFFF;
 }
 
@@ -108,44 +106,39 @@ label { /* Apenas letras mipusculas... */
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-
   position: absolute;
   width: 680px;
   height: 67px;
-  left: 10%;
-  top: 630px;
+  left: 12%;
+  top: 580px;
 }
 
 .btn-criptografar {
-  /* Assim que você atribuir a propriedade de CSS display: flex ao container,
-  ele passará a ser o que chamamos de flex container e todos seus filhos diretos,
-  por sua vez, serão os flex-itens. */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 24px;
 
   position: static;
-  width: 330px;
+  width: 300px;
   height: 67px;
   left: 0px;
   top: 0px;
-
   background: #0A3871;
-
-  /* Monta a borda do botão - Dark blue/dark-blue-300 */
   border-radius: 24px;
 
   flex: none;
   order: 0;
   flex-grow: 0;
   margin: 0px 24px;
-  color: #FFFFFF; /* cor do texto do botão*/
+  flex-grow: 0;
+  color: #FFFFFF;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
-  line-height: 19px; /* centralizou verticalmente o texto do botão */
+  line-height: 19px;  /* centralizou verticalmente o texto do botão */
   justify-content: center;
+
 }
 
 .btn-descriptografar{
@@ -155,12 +148,12 @@ label { /* Apenas letras mipusculas... */
   padding: 24px;
 
   position: static;
-  width: 330px;
+  width: 300px;
   height: 67px;
   left: 352px;
   top: 0px;
 
-  background: #344291;
+  background: #0000FF;
 
   /* Monta a borda do botão */
   border-radius: 24px;
@@ -170,80 +163,73 @@ label { /* Apenas letras mipusculas... */
   flex-grow: 0;
   margin: 0px 24px;
 
-  /* Configura o texto do botão */
   color: #FFFFFF;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
-  line-height: 19px;
+  line-height: 19px;  /* centralizou verticalmente o texto do botão */
   justify-content: center;
 }
 
-.message-box{ /* onde aparecem div-aparece e div-desapaece */
+/* onde aparecem div-aparece e div-desapaece */
+.message-box{
   position: absolute;
   width: 400px;
+  height: 648px;
+  left: 70%;
+  top: 20px;
+  padding-left: 20px;
+  padding-top: 80px;
 
+  background: #0080FF;
   /* shadow */
   box-shadow: 20px 20px 70px 45px grey;
   border-radius: 32px;
-
-  height: 680px;
-
-  padding-top: 5%;
-  padding-left: 2%;
-  margin-top: 2.5%;
-  left: 65%;
-  background: ##16AD7B;
-
 }
 
-.message-box-div { /* div-desaparece */
-  width: 336px;
-  margin-top: 5%;
+.message-box-div, .message-box-div img {
+  padding-top: 40px;
   background: transparent;
 }
 
-.message-box-div img{ /* div-desaparece */
-  margin-left: 5%;
-  background: transparent;
-}
-
-.message-box-div h2{ /* div-desaparece */
+.message-box h2{
   position: static;
   width: 336px;
   height: 58px;
   left: 0px;
-  padding-top: 3px;
+  top: 0px;
 
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
   font-size: 27px;
   line-height: 120%; /* aproximadamente 29px */
+
   text-align: center;
 
   color: #FFFFFF;
-  background: transparent; /* muda a cor de fundo do texto para branco #FFFFFF */
+  background: transparent;
 
   flex: none;
-  order: 1;
+  order: 0;
   align-self: stretch; /* The element is positioned to fit the container */
   flex-grow: 0;
   margin: 16px 0px;
 }
 
-.message-box-div h3{ /* div-desaparece */
+.message-box h3{
   position: static;
   width: 336px;
   height: 48px;
   left: 0px;
-  padding-top: 24px;
+  top: 74px;
 
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 150%; /* Define a altura da linha em ~- 24px */
+
   text-align: center;
 
   color: #FFFFFF;
@@ -256,36 +242,56 @@ label { /* Apenas letras mipusculas... */
   margin: 16px 0px;
 }
 
-.div-mensaje{ /* é a textarea da div-aparece */
+/* textarea da div-aparece */
+.div-mensaje{
   position: absolute;
   width: 336px;
-  height: 420px;
-  padding-left: 5px;
-
+  height: 430px;
+  left: 35px;
+  top: 52px;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
-  line-height: 1.6;
+  line-height: 150%;  /* or 36px */
 
   resize: none;
   word-wrap: break-word;
 
-  /* Gray/gray-400 */
   color: #495057;
   background:#C1BFBF;
 }
 
-.btn-copiar{ /* div-aparece */
+.far fa-clone, .btn-copiar {
+  background: #006699;
+}
+
+.btn-copiar{
+  top: 498px;
+  color: #FFFFFF;
+  order: 0;
+  flex-grow: 1;
+}
+
+.fas fa-eraser, .btn-limpar{
+  background: #003300;
+}
+.btn-limpar{
+  top: 574px;
+  color: #FFFFFF;
+  order: 0;
+  flex-grow: 1;
+}
+
+.btn-copiar, .btn-limpar {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 24px;
 
   position: absolute;
-  width: 330px;
+  width: 336px;
   height: 67px;
   left: 25px;
-  top: 75%;
 
   border-radius: 24px;
 
@@ -294,63 +300,36 @@ label { /* Apenas letras mipusculas... */
   font-size: 28px;
   line-height: 19px;
   text-align: center;
-
-  color: #FFFFFF;
-  background: #471baa;;
-
   flex: none;
-  order: 0;
-  flex-grow: 1;
   margin: 0px 8px;
   justify-content: center;
 }
 
-.btn-limpar{ /* div-aparece */
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 24px;
-
-  position: absolute;
-  width: 330px;
-  height: 67px;
-  left: 25px;
-  top: 88%;
-
-  border-radius: 24px;
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 19px;
-  text-align: center;
-
-  color: #FFFFFF;
-  background:##1648dd;;
-
-  flex: none;
-  order: 0;
-  flex-grow: 1;
-  margin: 0px 8px;
-  justify-content: center;
+.rodape-prin, .rodape-prin span, .icones-sociais li {
+  background: transparent;
 }
 
 .rodape-prin
 {
-  text-align: center;
-  margin-top: 52%;
-  margin-left: 22%;
-  clear: both; /* limpa tudo dos dois lados do elemento */
-  height: 60px;
-  color: rgb(250,255,250);
+  position: absolute;
+  color: #FFFFFF;
   font-size: 15px;
+  font-weight: bold;
   font-family: "arial", sans-serif;
+  text-align: center;
+
+  clear: both; /* limpa udo dos dois lados do elemento */
+  width: 100%;
+  height: 40px;
+
+  bottom: 0;
+  left: 0;
 }
 
 .rodape-prin span {
   float: left;
-  width:50%; /* determina o espaço entre o copyright e os icones */
-  line-height: 60px; /* Mesma altura do rodapé */
+  width:60%; /* determina o espaço entre o copyright e os icones */
+  line-height: 30px; /* Mesma altura do rodapé */
 }
 
 .icones-sociais ul {
@@ -359,8 +338,7 @@ label { /* Apenas letras mipusculas... */
   float: left;
   width: 10%;
   margin: 0;
-  line-height: 60px;
-
+  line-height: 50px;
 }
 
 .icones-sociais li {
@@ -368,994 +346,6 @@ label { /* Apenas letras mipusculas... */
   float: left;
   margin-left: 5px;
   margin-top: 7px;
-  width: 40px;
-  height: inherit;
-}
-
-/* --------------------------------- MEDIAS --------------------------------- */
-@media only screen and (min-width: 1290px) and (max-width: 1300px){
-  .logo{
-    top: 25px;
-    left: 12px;
-  }
-
-  .text-input{
-    width: 400px;
-    height: 410px;
-    top: 25px;
-    left: 170px;
-  }
-
-  .form-group{
-    margin-top:380px;
-    left: 16px;
-    top:190px;
-  }
-
-  label{
-    font-size:18px;
-  }
-
-  .botones-div{
-    flex-direction: column;
-    top:46rem;
-    left:10rem;
-  }
-
-  .btn-criptografar{
-    width: 342px;
-  }
-
-  .btn-descriptografar{
-    width: 342px;
-    margin-top:5px
-  }
-
-  .message-box{
-    width: 320px;
-    height: 720px;
-    margin-top: 3%;
-    margin-left: -45px;
-  }
-
-  .message-box-div{
-    padding-top:0.5rem;
-    height:auto;
-    border-radius: 32px;
-    padding-left: 0px;
-  }
-
-  .message-box-div img{
-    margin-left: 0%;
-    width: 300px;
-  }
-
-  .message-box-div h2{
-    font-size:18px;
-    width:80%;
-    margin: 0.5rem;
-    margin-top: 20px;
-    height:100%;
-  }
-
-  .message-box-div h3{
-    font-size:18px;
-    width:80%;
-    margin: 0.5rem;
-    height:100%;
-  }
-
-  .div-mensaje{
-    width:85%;
-    height:450px;
-    top: 2.5rem;
-    left:1.8rem;
-    flex: 1 1 auto;
-  }
-
-  .btn-copiar{
-    top:38rem;
-    left:1.5rem;
-    width:84%;
-    height:65px;
-    font-size:24px;
-  }
-
-  .btn-limpar{
-    top:43rem;
-    left:1.5rem;
-    width:84%;
-    height:65px;
-    font-size:24px;
-  }
-
-  .rodape-prin
-  {
-    text-align: center;
-    margin-top: 80%;
-    margin-left: 18%;
-  }
-
-  .rodape-prin span {
-    width:60%; /* determina o espaço entre o copyright e os icones */
-    line-height: 60px; /* Mesma altura do rodapé */
-  }
-}
-
-/* ----------------------------------------------------------------------------- */
-
-@media only screen and (min-width: 1110px) and (max-width: 1280px){
-  .logo{
-    top: 25px;
-    left: 12px;
-  }
-
-  .text-input{
-    width: 400px;
-    height: 410px;
-    top: 25px;
-    left: 170px;
-  }
-
-  .form-group{
-    margin-top:380px;
-    left: 16px;
-    top:190px;
-  }
-
-  label{
-    font-size:18px;
-  }
-
-  .botones-div{
-    flex-direction: column;
-    top:46rem;
-    left:10rem;
-  }
-
-  .btn-criptografar{
-    width: 342px;
-  }
-
-  .btn-descriptografar{
-    width: 342px;
-    margin-top:5px
-  }
-
-  .message-box{
-    width: 320px;
-    height: 720px;
-    margin-top: 3%;
-    margin-left: -45px;
-  }
-
-  .message-box-div{
-    padding-top:0.5rem;
-    height:auto;
-    border-radius: 32px;
-    padding-left: 0px;
-  }
-
-  .message-box-div img{
-    margin-left: 0%;
-    width: 300px;
-  }
-
-  .message-box-div h2{
-    font-size:18px;
-    width:80%;
-    margin: 0.5rem;
-    margin-top: 20px;
-    height:100%;
-  }
-
-  .message-box-div h3{
-    font-size:18px;
-    width:80%;
-    margin: 0.5rem;
-    height:100%;
-  }
-
-  .div-mensaje{
-    width:85%;
-    height:450px;
-    top: 2.5rem;
-    left:1.8rem;
-    flex: 1 1 auto;
-  }
-
-  .btn-copiar{
-    top:38rem;
-    left:1.5rem;
-    width:84%;
-    height:65px;
-    font-size:24px;
-  }
-
-  .btn-limpar{
-    top:43rem;
-    left:1.5rem;
-    width:84%;
-    height:65px;
-    font-size:24px;
-  }
-
-  .rodape-prin
-  {
-    text-align: center;
-    margin-top: 80%;
-    margin-left: 18%;
-  }
-
-  .rodape-prin span {
-    width:60%; /* determina o espaço entre o copyright e os icones */
-    line-height: 60px; /* Mesma altura do rodapé */
-  }
-}
-
-/* ----------------------------------------------------------------------------- */
-
-@media only screen and (min-width: 1000px) and (max-width: 1100px){
-  .logo{
-    top: 25px;
-    left: 12px;
-  }
-
-  .text-input{
-    width: 336px;
-    height: 410px;
-    top: 25px;
-    left: 170px;
-  }
-
-  .form-group{
-    margin-top:380px;
-    left: 47px;
-    top:167px;
-  }
-
-  label{
-    font-size:18px;
-  }
-
-  .botones-div{
-    flex-direction: column;
-    top:43rem;
-    left:10rem;
-  }
-
-  .btn-criptografar{
-    width: 342px;
-  }
-
-  .btn-descriptografar{
-    width: 342px;
-    margin-top:5px
-  }
-
-  .message-box{
-    width: 320px;
-    height: 720px;
-    margin-top: 3%;
-    margin-left: -45px;
-  }
-
-  .message-box-div{
-    padding-top:0.5rem;
-    height:auto;
-    border-radius: 32px;
-    padding-left: 0px;
-  }
-
-  .message-box-div img{
-    margin-left: 0%;
-    width: 300px;
-  }
-
-  .message-box-div h2{
-    font-size:18px;
-    width:80%;
-    margin: 0.5rem;
-    margin-top: 20px;
-    height:100%;
-  }
-
-  .message-box-div h3{
-    font-size:18px;
-    width:80%;
-    margin: 0.5rem;
-    height:100%;
-  }
-
-  .div-mensaje{
-    width:85%;
-    height:450px;
-    top: 2.5rem;
-    left:1.8rem;
-    flex: 1 1 auto;
-  }
-
-  .btn-copiar{
-    top:38rem;
-    left:1.5rem;
-    width:84%;
-    height:65px;
-    font-size:24px;
-  }
-
-  .btn-limpar{
-    top:43rem;
-    left:1.5rem;
-    width:84%;
-    height:65px;
-    font-size:24px;
-  }
-
-  .rodape-prin
-  {
-    text-align: center;
-    margin-top: 80%;
-    margin-left: 18%;
-  }
-
-  .rodape-prin span {
-    width:60%; /* determina o espaço entre o copyright e os icones */
-    line-height: 60px; /* Mesma altura do rodapé */
-  }
-}
-
-/* ----------------------------------------------------------------------------- */
-
-@media only screen and (min-width: 800px) and (max-width: 999px){
-  .logo{
-    top: 35px;
-    left: -10px;
-  }
-
-  .text-input{
-    width: 260px;
-    height: 410px;
-    top: 55px;
-    left: 120px;
-    font-size: 22px;
-    word-wrap: break-word;
-  }
-
-  .form-group{
-    margin-top:386px;
-    left: 10px;
-    top:176px;
-  }
-
-  label{
-    font-size:12px;
-  }
-
-  .botones-div{
-    flex-direction: column;
-    top:45rem;
-    left:6rem;
-  }
-
-  .btn-criptografar{
-    width: 280px;
-  }
-
-  .btn-descriptografar{
-    width: 280px;
-    margin-top:5px
-  }
-
-  .message-box{
-    width: 300px;
-    height: 720px;
-    margin-top: 5%;
-    margin-left: -65px;
-  }
-
-  .message-box-div{
-    padding-top:0.5rem;
-    height:auto;
-    border-radius: 32px;
-    padding-left: 0px;
-  }
-
-  .message-box-div img{
-    margin-left: 0%;
-    width: 250px;
-  }
-
-  .message-box-div h2{
-    font-size:18px;
-    width:80%;
-    margin: 0.5rem;
-    margin-top: 20px;
-    height:100%;
-  }
-
-  .message-box-div h3{
-    font-size:18px;
-    width:80%;
-    margin: 0.5rem;
-    height:100%;
-  }
-
-  .div-mensaje{
-    width:85%;
-    height:450px;
-    top: 2.5rem;
-    left:1.8rem;
-    flex: 1 1 auto;
-  }
-
-  .btn-copiar{
-    top:38rem;
-    left:1.5rem;
-    width:84%;
-    height:65px;
-    font-size:24px;
-  }
-
-  .btn-limpar{
-    top:43rem;
-    left:1.5rem;
-    width:84%;
-    height:65px;
-    font-size:24px;
-  }
-
-  .rodape-prin
-  {
-    text-align: center;
-    margin-top: 1000px;
-    margin-left: 18%;
-  }
-
-  .rodape-prin span {
-    width:60%; /* determina o espaço entre o copyright e os icones */
-    line-height: 60px; /* Mesma altura do rodapé */
-  }
-}
-
-/* ------------------------------------------------------------------------ */
-
-@media only screen and (min-device-width : 760px) and (max-device-width : 799px){
-  .logo{
-    top: 3rem;
-    left: -1.5rem;
-    width:25%;
-  }
-
-  .text-input{
-    width:40rem;
-    top:6rem;
-    left:9rem;
-    font-size: 22px;
-    word-wrap: break-word;
-  }
-
-  .form-group{
-    left:2rem;
-    top:21rem;
-  }
-  label{
-    font-size:12px;
-  }
-
-  .botones-div{
-    flex-direction: row;
-    top:45rem;
-    left:8rem;
-  }
-
-  .btn-criptografar,.btn-descriptografar{
-    width: 280px;
-    font-size:20px;
-    height:65px;
-    margin: 0.5rem;
-  }
-
-  .message-box{
-    width:40rem;
-    height:40rem;
-    left:9rem;
-    top:55rem;
-    padding:0;
-  }
-  .message-box-div{
-    padding-top:0.5rem;
-    height:auto;
-    border-radius: 32px;
-    padding-left: 1.5rem;
-  }
-  .message-box-div img{
-    display: none;
-  }
-  .message-box-div h2{
-    font-size:14px;
-    width:80%;
-    margin: 0.5rem;
-    height:100%;
-  }
-  .message-box-div h3{
-    font-size:12px;
-    width:80%;
-    margin: 0.5rem;
-    height:100%;
-  }
-
-  .div-mensaje{
-    width: 35rem;
-    top: 2rem;
-    height:25rem;
-    left:2.5rem;
-    font-size: 14px;
-    word-wrap: break-word;
-  }
-
-  .btn-copiar{
-    top:28rem;
-    width: 35rem;
-    height:60px;
-    font-size:20px;
-    left:2rem;
-  }
-  .btn-limpar{
-    top:33rem;
-    width: 35rem;
-    height:60px;
-    font-size:20px;
-    left:2rem;
-  }
-
-  .rodape-prin
-  {
-    margin-top: 110rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-size:4px;
-  }
-
-  .rodape-prin span {
-    width: 83%;
-  }
-
-  .icones-sociais li {
-    width: 10px;
-  }
-}
-
-/* ------------------------------------------------------------------------ */
-
-@media only screen and (min-device-width : 736px) and (max-device-width : 759px){
-  .logo{
-    top: 3rem;
-    left: -1.5rem;
-    width:25%;
-  }
-
-  .text-input{
-    width:30rem;
-    top:6rem;
-    left:9rem;
-    font-size: 22px;
-    word-wrap: break-word;
-  }
-
-  .form-group{
-    left:3.5rem;
-    top:22rem;
-  }
-  label{
-    font-size:12px;
-  }
-
-  .botones-div{
-    flex-direction: row;
-    top:45rem;
-    left:8rem;
-  }
-
-  .btn-criptografar,.btn-descriptografar{
-    width: 210px;
-    font-size:20px;
-    height:65px;
-    margin: 0.5rem;
-  }
-
-  .message-box{
-    width:30rem;
-    height:40rem;
-    left:9rem;
-    top:55rem;
-    padding:0;
-  }
-  .message-box-div{
-    width:28rem;
-    padding-top:0.5rem;
-    height:auto;
-    border-radius: 32px;
-    padding-left: 1.5rem;
-  }
-  .message-box-div img{
-    display: none;
-  }
-  .message-box-div h2{
-    font-size:14px;
-    width:95%;
-    margin: 0.5rem;
-    height:100%;
-  }
-  .message-box-div h3{
-    font-size:12px;
-    width:95%;
-    margin: 0.5rem;
-    height:100%;
-  }
-
-  .div-mensaje{
-    width: 25rem;
-    top: 2rem;
-    height:25rem;
-    left:2.5rem;
-    font-size: 14px;
-    word-wrap: break-word;
-  }
-
-  .btn-copiar{
-    top:28rem;
-    width: 25rem;
-    height:60px;
-    font-size:20px;
-    left:2rem;
-  }
-  .btn-limpar{
-    top:33rem;
-    width: 25rem;
-    height:60px;
-    font-size:20px;
-    left:2rem;
-  }
-
-  .rodape-prin
-  {
-    margin-top: 110rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-size:4px;
-  }
-
-  .rodape-prin span {
-    width: 83%;
-  }
-
-  .icones-sociais li {
-    width: 10px;
-  }
-}
-
-/* ------------------------------------------------------------------------ */
-
-@media only screen and (min-device-width : 481px) and (max-device-width : 735px){
-  .logo{
-    top: 3rem;
-    left: -1.5rem;
-    width:25%;
-  }
-
-  .text-input{
-    width:30rem;
-    top:6rem;
-    left:9rem;
-    font-size: 22px;
-    word-wrap: break-word;
-  }
-
-  .form-group{
-    left:3.5rem;
-    top:24rem;
-  }
-  label{
-    font-size:12px;
-  }
-
-  .botones-div{
-    flex-direction: row;
-    top:45rem;
-    left:8rem;
-  }
-
-  .btn-criptografar,.btn-descriptografar{
-    width: 210px;
-    font-size:20px;
-    height:65px;
-    margin: 0.5rem;
-  }
-
-  .message-box{
-    width:30rem;
-    height:40rem;
-    left:9rem;
-    top:55rem;
-    padding:0;
-  }
-  .message-box-div{
-    width:28rem;
-    padding-top:0.5rem;
-    height:auto;
-    border-radius: 32px;
-    padding-left: 1.5rem;
-  }
-  .message-box-div img{
-    display: none;
-  }
-  .message-box-div h2{
-    font-size:14px;
-    width:95%;
-    margin: 0.5rem;
-    height:100%;
-  }
-  .message-box-div h3{
-    font-size:12px;
-    width:95%;
-    margin: 0.5rem;
-    height:100%;
-  }
-
-  .div-mensaje{
-    width: 25rem;
-    top: 2rem;
-    height:25rem;
-    left:2.5rem;
-    font-size: 14px;
-    word-wrap: break-word;
-  }
-
-  .btn-copiar{
-    top:28rem;
-    width: 25rem;
-    height:60px;
-    font-size:20px;
-    left:2rem;
-  }
-  .btn-limpar{
-    top:33rem;
-    width: 25rem;
-    height:60px;
-    font-size:20px;
-    left:2rem;
-  }
-
-  .rodape-prin
-  {
-    margin-top: 110rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-size:4px;
-  }
-
-  .rodape-prin span {
-    width: 83%;
-  }
-
-  .icones-sociais li {
-    width: 10px;
-  }
-}
-/* -----------------------------------------------------------------------. */
-@media only screen and (min-device-width : 360px) and (max-device-width : 480px){
-  .logo{
-    top: 1rem;
-    left: -1.5rem;
-    width:25%;
-  }
-
-  .text-input{
-    width:20rem;
-    top:4rem;
-    left:4.5rem;
-    font-size: 22px;
-    word-wrap: break-word;
-  }
-
-  .form-group{
-    left:1rem;
-    top:27rem;
-  }
-  label{
-    font-size:12px;
-  }
-
-  .botones-div{
-    flex-direction: column;
-    top:41rem;
-    left:4.2rem;
-  }
-
-  .btn-criptografar,.btn-descriptografar{
-    width: 280px;
-    font-size:20px;
-    height:65px;
-    margin: 0.5rem;
-  }
-
-  .message-box{
-    width:20rem;
-    left:4.4rem;
-    top:55rem;
-    padding:0;
-    height:40rem;
-  }
-  .message-box-div{
-    padding-top:0.5rem;
-    height:auto;
-    border-radius: 32px;
-    padding-left: 1.5rem;
-  }
-  .message-box-div img{
-    display: none;
-  }
-  .message-box-div h2{
-    font-size:14px;
-    width:80%;
-    margin: 0.5rem;
-    height:100%;
-  }
-  .message-box-div h3{
-    font-size:12px;
-    width:80%;
-    margin: 0.5rem;
-    height:100%;
-  }
-
-  .div-mensaje{
-    width: 17rem;
-    top: 2rem;
-    height:25rem;
-    left:1.5rem;
-    font-size: 14px;
-    word-wrap: break-word;
-  }
-
-  .btn-copiar{
-    top:28rem;
-    width: 245px;
-    height:60px;
-    font-size:20px;
-    left:1rem;
-  }
-  .btn-limpar{
-    top:33rem;
-    width: 245px;
-    height:60px;
-    font-size:20px;
-    left:1rem;
-  }
-
-  .rodape-prin
-  {
-    margin-top: 110rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-size:4px;
-  }
-
-  .rodape-prin span {
-    width: 83%;
-  }
-
-  .icones-sociais li {
-    width: 10px;
-  }
-}
-
-/* -------------------------------------------------------------------------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 359px){
-  .logo{
-    top: 1rem;
-    left: -1.5rem;
-    width:25%;
-  }
-
-  .text-input{
-    width:15rem;
-    top:4rem;
-    left:4.5rem;
-    font-size: 22px;
-    word-wrap: break-word;
-  }
-
-  .form-group{
-    left:1rem;
-    top:27rem;
-  }
-  label{
-    font-size:8px;
-    height: 5px;
-    line-height: normal;
-    text-align:left;
-  }
-
-  .botones-div{
-    flex-direction: column;
-    top:41rem;
-    left:4.2rem;
-  }
-
-  .btn-criptografar,.btn-descriptografar{
-    width: 210px;
-    font-size:20px;
-    height:65px;
-    margin: 0.5rem;
-  }
-
-  .message-box{
-    width:15rem;
-    left:4.4rem;
-    top:55rem;
-    padding:0;
-    height:45rem;
-  }
-  .message-box-div{
-    width:15rem;
-    padding-top:0.5rem;
-    height:auto;
-    border-radius: 32px;
-    padding-left: 1.5rem;
-  }
-  .message-box-div img{
-    display: none;
-  }
-  .message-box-div h2{
-    font-size:14px;
-    width:80%;
-    margin: 0.5rem;
-    height:100%;
-  }
-  .message-box-div h3{
-    font-size:12px;
-    width:80%;
-    margin: 0.5rem;
-    height:100%;
-  }
-
-  .div-mensaje{
-    width: 12rem;
-    top: 2rem;
-    height:28rem;
-    left:1.5rem;
-    font-size: 14px;
-    word-wrap: break-word;
-  }
-
-  .btn-copiar{
-    top:32rem;
-    width: 170px;
-    height:60px;
-    font-size:20px;
-    left:1rem;
-  }
-  .btn-limpar{
-    top:37rem;
-    width: 170px;
-    height:60px;
-    font-size:20px;
-    left:1rem;
-  }
-
-  .rodape-prin
-  {
-    margin-top: 110rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-size:4px;
-  }
-
-  .rodape-prin span {
-    width: 83%;
-  }
-
-  .icones-sociais li {
-    width: 10px;
-  }
+  width: 20px;
+  height: 20px;
 }
