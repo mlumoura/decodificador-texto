@@ -22,7 +22,7 @@
 
 .logo{
   position: absolute;
-  left: 30px;
+  left: 27px;
   right: 37.43%;
   top: 25px;
   bottom: 0%;
@@ -34,9 +34,9 @@
   /* The element is positioned relative to its first
   positioned (not static) ancestor element */
   position: absolute;
-  width: 600px;
+  width: 607px;
   height: 360px; /* altura do textarea */
-  left: 15%;
+  left: 12%;
   top: 125px;
 
   font-style: normal;
@@ -74,7 +74,7 @@
   position: absolute;
   width: auto;
   height: 18px;
-  left: 15%;
+  left: 12%;
   top: 510px;
 }
 
@@ -109,65 +109,41 @@ label {
   position: absolute;
   width: 680px;
   height: 67px;
-  left: 12%;
-  top: 580px;
+  left: 9%;
+  top: 565px;
 }
 
-.btn-criptografar {
+.btn-criptografar{
+  left: 0px;
+  background: #0A3871;
+  order: 0;
+}
+.btn-descriptografar{
+  left: 352px;
+  background: #0000FF;
+  order: 1;
+}
+
+.btn-criptografar, .btn-descriptografar {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 24px;
-
   position: static;
   width: 300px;
   height: 67px;
-  left: 0px;
   top: 0px;
-  background: #0A3871;
+
   border-radius: 24px;
 
   flex: none;
-  order: 0;
   flex-grow: 0;
   margin: 0px 24px;
-  flex-grow: 0;
   color: #FFFFFF;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
   line-height: 19px;  /* centralizou verticalmente o texto do botão */
-  justify-content: center;
-
-}
-
-.btn-descriptografar{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 24px;
-
-  position: static;
-  width: 300px;
-  height: 67px;
-  left: 352px;
-  top: 0px;
-
-  background: #0000FF;
-
-  /* Monta a borda do botão */
-  border-radius: 24px;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 24px;
-
-  color: #FFFFFF;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 19px;  /* centraliza verticalmente o texto do botão */
   justify-content: center;
 }
 
@@ -175,8 +151,8 @@ label {
 .message-box{
   position: absolute;
   width: 400px;
-  height: 648px;
-  left: 70%;
+  height: 620px;
+  left: 58%;
   top: 20px;
   padding-left: 20px;
   padding-top: 80px;
@@ -192,63 +168,50 @@ label {
   background: transparent;
 }
 
-.message-box h2{
+.message-box-div h2,.message-box-div h3{
   position: static;
   width: 336px;
-  height: 58px;
   left: 0px;
-  top: 0px;
-
   font-family: Inter;
   font-style: normal;
-  font-weight: bold;
-  font-size: 27px;
-  line-height: 120%; /* aproximadamente 29px */
-
   text-align: center;
-
   color: #FFFFFF;
   background: transparent;
-
   flex: none;
-  order: 0;
-  align-self: stretch; /* The element is positioned to fit the container */
+  align-self: stretch;
   flex-grow: 0;
   margin: 16px 0px;
 }
 
+.message-box h2{
+  height: 58px;
+  top: 0px;
+
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 120%; /* aproximadamente 29px */
+
+  order: 0;
+}
+
 .message-box h3{
-  position: static;
-  width: 336px;
   height: 48px;
-  left: 0px;
   top: 74px;
 
-  font-family: Inter;
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 150%; /* Define a altura da linha em ~- 24px */
 
-  text-align: center;
-
-  color: #FFFFFF;
-  background: transparent;
-
-  flex: none;
   order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 16px 0px;
 }
 
 /* textarea da div-aparece */
 .div-mensaje{
   position: absolute;
   width: 336px;
-  height: 430px;
+  height: 400px;
   left: 35px;
-  top: 52px;
+  top: 48px;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -262,11 +225,11 @@ label {
 }
 
 .far fa-clone, .btn-copiar {
-  background: #006699;
+  background: #210f87;
 }
 
 .btn-copiar{
-  top: 498px;
+  top: 460px;
   color: #FFFFFF;
   order: 0;
   flex-grow: 1;
@@ -275,8 +238,9 @@ label {
 .fas fa-eraser, .btn-limpar{
   background: #003300;
 }
+
 .btn-limpar{
-  top: 574px;
+  top: 546px;
   color: #FFFFFF;
   order: 0;
   flex-grow: 1;
@@ -309,8 +273,7 @@ label {
   background: transparent;
 }
 
-.rodape-prin
-{
+.rodape-prin {
   position: absolute;
   color: #FFFFFF;
   font-size: 15px;
@@ -323,12 +286,12 @@ label {
   height: 40px;
 
   bottom: 0;
-  left: 0;
+  left: 185px;
 }
 
 .rodape-prin span {
   float: left;
-  width:60%; /* determina o espaço entre o copyright e os icones */
+  width:35%; /* determina o espaço entre o copyright e os icones */
   line-height: 30px; /* Mesma altura do rodapé */
 }
 
@@ -341,11 +304,1051 @@ label {
   line-height: 50px;
 }
 
+.icones-sociais img{
+  background: transparent;
+}
+
 .icones-sociais li {
   display: inline-block;
+  background: transparent;
   float: left;
   margin-left: 5px;
   margin-top: 7px;
   width: 20px;
   height: 20px;
+}
+/* ======================================= MEDIAS =========================== */
+@media only screen and (min-width: 720px) and (max-width: 828px){
+  .logo{
+    top: 1em;
+    width:10%;
+    left:0;
+  }
+
+  .text-input, .div-mensaje {
+    font-size: 14px;
+  }
+
+  .text-input{
+    top: 6rem;
+    width: 26rem;
+    height: 9rem;
+    left: 5rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    top: 16rem;
+    left:5rem;
+  }
+
+  ::placeholder, label {
+    font-size: 12px;
+  }
+
+  .botones-div{
+    flex-direction: row;
+    top:18rem;
+    left:5rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    line-height: 3px;
+    font-size:13px;
+    margin-top:10px;
+    margin-left: 0;
+    height:20px;
+    width:12.5rem;
+  }
+
+  .message-box{
+    width: 26rem;
+    height:34rem;
+    top: 27rem;
+    left:5rem;
+    padding-top: 50px;
+  }
+
+  .message-box-div img{
+    display: none;
+  }
+
+  .message-box-div h2,.message-box-div h3{
+    width: 24rem;
+    font-size:12px;
+    left: 10%;
+  }
+
+  .div-mensaje{
+    width: 22rem;
+    height: 24rem;
+    top: 2rem;
+    left:2rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar {
+    top:27rem;
+  }
+
+  .btn-limpar{
+    top:31rem;
+  }
+
+  .btn-copiar,.btn-limpar {
+    line-height: 3px;
+    font-size:13px;
+    width:28rem;
+    height: 20px;
+    left: 1rem;
+  }
+
+  .icones.sociais img{
+    background: transparent;
+  }
+
+  .rodape-prin {
+    font-size:8px;
+    top: 78rem;
+    left: 4rem;
+  }
+
+  .rodape-prin span {
+    width:35%;
+    line-height: 40px; /* Mesma altura do rodapé */
+  }
+}
+/* =========================================================================== */
+@media only screen and (min-width: 1080px) and (max-width: 1200px){
+  .logo{
+    top: 1em;
+    width:10%;
+    left:0;
+  }
+
+  .text-input, .div-mensaje {
+    font-size: 14px;
+  }
+
+  .text-input{
+    top: 6rem;
+    width: 32rem;
+    height: 9rem;
+    left: 6rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    top: 16rem;
+    left:6rem;
+  }
+
+  ::placeholder, label {
+    font-size: 12px;
+  }
+
+  .botones-div{
+    flex-direction: row;
+    top:18rem;
+    left:6rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    line-height: 3px;
+    font-size:13px;
+    margin-top:10px;
+    margin-left: 0;
+    height:20px;
+    width:15.5rem;
+  }
+
+  .message-box{
+    width: 32rem;
+    height:31rem;
+    top: 27rem;
+    left:6rem;
+    padding-top: 50px;
+  }
+
+  .message-box-div img{
+    display: none;
+  }
+
+  .message-box-div h2,.message-box-div h3{
+    width: 30rem;
+    font-size:12px;
+    left: 10%;
+  }
+
+  .div-mensaje{
+    width: 28rem;
+    height: 19rem;
+    top: 2rem;
+    left:2rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar {
+    top:22rem;
+  }
+
+  .btn-limpar{
+    top:26rem;
+  }
+
+  .btn-copiar,.btn-limpar {
+    line-height: 3px;
+    font-size:13px;
+    width:28rem;
+    height: 20px;
+    left: 1rem;
+  }
+
+  .icones.sociais img{
+    background: transparent;
+  }
+
+  .rodape-prin {
+    font-size:10px;
+    top: 70rem;
+    left: 9rem;
+  }
+
+  .rodape-prin span {
+    width:25%;
+    line-height: 40px; /* Mesma altura do rodapé */
+  }
+}
+/* ================================================================== */
+
+@media only screen and (min-width: 1242px) and (max-width: 1334px){
+  .logo{
+    top: 1em;
+    width:10%;
+    left:0;
+  }
+
+  .text-input, .div-mensaje {
+    font-size: 16px;
+  }
+
+  .text-input{
+    top: 6rem;
+    width: 37rem;
+    height: 28rem;
+    left: 6rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    top: 35rem;
+    left:6rem;
+  }
+
+  ::placeholder, label {
+    font-size: 14px;
+  }
+
+  .botones-div{
+    flex-direction: row;
+    top:38rem;
+    left:6rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    line-height: 3px;
+    font-size:14px;
+    margin-top:10px;
+    margin-left: 0;
+    height:20px;
+    width:18rem;
+  }
+
+  .message-box{
+    width: 37rem;
+    height:48rem;
+    top: 47rem;
+    left:6rem;
+    padding-top: 150px;
+  }
+
+  .message-box-div img{
+    display: none;
+  }
+
+  .message-box-div h2,.message-box-div h3{
+    width: 35rem;
+    font-size:12px;
+    left: 10%;
+  }
+
+  .div-mensaje{
+    width: 33rem;
+    height: 36rem;
+    top: 2rem;
+    left:2rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar {
+    top:39rem;
+  }
+
+  .btn-limpar{
+    top:43rem;
+  }
+
+  .btn-copiar,.btn-limpar {
+    line-height: 3px;
+    font-size:14px;
+    width:33rem;
+    height: 20px;
+    left: 1.5rem;
+  }
+
+  .icones.sociais img{
+    background: transparent;
+  }
+
+  .rodape-prin {
+    font-size:12px;
+    top: 100rem;
+    left: 8rem;
+  }
+
+  .rodape-prin span {
+    width:25%;
+    line-height: 40px; /* Mesma altura do rodapé */
+  }
+}
+/* ========================================================================= */
+@media only screen and (min-width: 1440px) and (max-width: 1560px){
+  .logo{
+    top: 1em;
+    width:10%;
+    left:0;
+  }
+
+  .text-input, .div-mensaje {
+    font-size: 16px;
+  }
+
+  .text-input{
+    top: 8rem;
+    width: 45rem;
+    height: 28rem;
+    left: 6rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    top: 37rem;
+    left:6rem;
+  }
+
+  ::placeholder, label {
+    font-size: 14px;
+  }
+
+  .botones-div{
+    flex-direction: row;
+    top:41rem;
+    left:6rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    line-height: 3px;
+    font-size:14px;
+    margin-top:10px;
+    margin-left: 0;
+    height:20px;
+    width:22rem;
+  }
+
+  .message-box{
+    width: 45rem;
+    height:67rem;
+    top: 50rem;
+    left:6rem;
+    padding-top: 150px;
+  }
+
+  .message-box-div img{
+    display: none;
+  }
+
+  .message-box-div h2,.message-box-div h3{
+    width: 35rem;
+    font-size:12px;
+    left: 10%;
+  }
+
+  .div-mensaje{
+    width: 41rem;
+    height: 52rem;
+    top: 2rem;
+    left:2rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar {
+    top:56rem;
+  }
+
+  .btn-limpar{
+    top:60rem;
+  }
+
+  .btn-copiar,.btn-limpar {
+    line-height: 3px;
+    font-size:14px;
+    width:41rem;
+    height: 20px;
+    left: 1.5rem;
+  }
+
+  .icones.sociais img{
+    background: transparent;
+  }
+
+  .rodape-prin {
+    font-size:12px;
+    top: 121rem;
+    left: 10rem;
+  }
+
+  .rodape-prin span {
+    width:25%;
+    line-height: 40px; /* Mesma altura do rodapé */
+  }
+}
+/* ========================================================================= */
+
+@media only screen and (min-width: 1792px) and (max-width: 1910px){
+  .logo{
+    top: 1rem;
+    width:6%;
+    left:0;
+  }
+
+  .text-input, .div-mensaje {
+    font-size: 16px;
+  }
+
+  .text-input{
+    top: 6rem;
+    width: 30rem;
+    height: 12rem;
+    left: 6rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    top: 19rem;
+    left:6rem;
+  }
+
+  ::placeholder, label {
+    font-size: 14px;
+  }
+
+  .botones-div{
+    flex-direction: column;
+    top:21rem;
+    left:6rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    line-height: 3px;
+    font-size:11px;
+    margin-top:10px;
+    margin-left: 0;
+    height:20px;
+    width:30rem;
+  }
+
+  .message-box{
+    width: 30rem;
+    height:31rem;
+    top: 1rem;
+    left:47rem;
+    padding-top: 0;
+  }
+
+  .message-box-div img{
+    width:13rem;
+    margin-left: 15%;
+    padding-left: 1.5rem;
+  }
+
+  .message-box-div h2,.message-box-div h3{
+    width: 28rem;
+    font-size:14px;
+    left: 10%;
+    height: 20px;
+  }
+
+  .div-mensaje{
+    width: 26rem;
+    height: 19rem;
+    top: 2rem;
+    left:2rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar {
+    top:22rem;
+  }
+
+  .btn-limpar{
+    top:26rem;
+  }
+
+  .btn-copiar,.btn-limpar {
+    line-height: 3px;
+    font-size:11px;
+    width:26rem;
+    height: 20px;
+    left: 1.5rem;
+  }
+
+  .icones.sociais img{
+    background: transparent;
+  }
+
+  .rodape-prin {
+    font-size:12px;
+    top: 35rem;
+    left: 10%;
+  }
+
+  .rodape-prin span {
+    width:30%;
+    line-height: 40px; /* Mesma altura do rodapé */
+  }
+}
+/* ========================================================================= */
+
+@media only screen and (min-width: 1920px) and (max-width: 2270px){
+  .logo{
+    top: 0.3rem;
+    width:6%;
+    left:0;
+  }
+
+  .text-input, .div-mensaje {
+    font-size: 16px;
+  }
+
+  .text-input{
+    top: 4rem;
+    width: 24rem;
+    height: 12rem;
+    left: 6rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    top: 17rem;
+    left:6rem;
+  }
+
+  ::placeholder, label {
+    font-size: 14px;
+  }
+
+  .botones-div{
+    flex-direction: column;
+    top:19rem;
+    left:6rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    line-height: 3px;
+    font-size:11px;
+    margin-top:10px;
+    margin-left: 0;
+    height:20px;
+    width:24rem;
+  }
+
+  .message-box{
+    width: 22rem;
+    height:29rem;
+    top: 1rem;
+    left:38rem;
+    padding-top: 0;
+  }
+
+  .message-box-div img{
+    width:13rem;
+    margin-left: 15%;
+    padding-left: 1.5rem;
+  }
+
+  .message-box-div h2,.message-box-div h3{
+    width: 20rem;
+    font-size:14px;
+    left: 10%;
+    height: 20px;
+  }
+
+  .div-mensaje{
+    width: 20rem;
+    height: 17rem;
+    top: 2rem;
+    left:1rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar {
+    top:20rem;
+  }
+
+  .btn-limpar{
+    top:24rem;
+  }
+
+  .btn-copiar,.btn-limpar {
+    line-height: 3px;
+    font-size:11px;
+    width:20rem;
+    height: 20px;
+    left: 0.5rem;
+  }
+
+  .icones.sociais img{
+    background: transparent;
+  }
+
+  .rodape-prin {
+    font-size:10px;
+    top: 32rem;
+    left: 0;
+  }
+
+  .rodape-prin span {
+    width:30%;
+    line-height: 40px; /* Mesma altura do rodapé */
+  }
+}
+/* ========================================================================= */
+
+@media only screen and (min-width: 2280px) and (max-width: 2436px){
+  .logo{
+    top: 0.3rem;
+    width:6%;
+    left:0;
+  }
+
+  .text-input, .div-mensaje {
+    font-size: 16px;
+  }
+
+  .text-input{
+    top: 6rem;
+    width: 30rem;
+    height: 12rem;
+    left: 9rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    top: 19rem;
+    left:9rem;
+  }
+
+  ::placeholder, label {
+    font-size: 14px;
+  }
+
+  .botones-div{
+    flex-direction: row;
+    top:21rem;
+    left:9rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    line-height: 3px;
+    font-size:14px;
+    margin-top:10px;
+    margin-left: 0;
+    height:20px;
+    width:14.5rem;
+  }
+
+  .message-box{
+    width: 30rem;
+    height:31rem;
+    top: 1rem;
+    left:45rem;
+    padding-top: 0;
+  }
+
+  .message-box-div img{
+    width:14rem;
+    margin-left: 15%;
+    padding-left: 1.5rem;
+  }
+
+  .message-box-div h2,.message-box-div h3{
+    width: 28rem;
+    font-size:14px;
+    left: 10%;
+    height: 20px;
+  }
+
+  .div-mensaje{
+    width: 28rem;
+    height: 19rem;
+    top: 2rem;
+    left:1rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar {
+    top:22rem;
+  }
+
+  .btn-limpar{
+    top:26rem;
+  }
+
+  .btn-copiar,.btn-limpar {
+    line-height: 3px;
+    font-size:14px;
+    width:28rem;
+    height: 20px;
+    left: 0.5rem;
+  }
+
+  .icones.sociais img{
+    background: transparent;
+  }
+
+  .rodape-prin {
+    font-size:14px;
+    top: 32rem;
+    left: 0;
+  }
+
+  .rodape-prin span {
+    width:30%;
+    line-height: 40px; /* Mesma altura do rodapé */
+  }
+}
+/* ========================================================================= */
+
+@media only screen and (min-width: 2532px) and (max-width: 2688px){
+  .logo{
+    top: 0.3rem;
+    width:6%;
+    left:0;
+  }
+
+  .text-input, .div-mensaje {
+    font-size: 16px;
+  }
+
+  .text-input{
+    top: 6rem;
+    width: 40rem;
+    height: 18rem;
+    left: 9rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    top: 25rem;
+    left:9rem;
+  }
+
+  ::placeholder, label {
+    font-size: 14px;
+  }
+
+  .botones-div{
+    flex-direction: row;
+    top:27rem;
+    left:9rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    line-height: 3px;
+    font-size:14px;
+    margin-top:10px;
+    margin-left: 0;
+    height:20px;
+    width:19.5rem;
+  }
+
+  .message-box{
+    width: 32rem;
+    height:37rem;
+    top: 1rem;
+    left:57rem;
+    padding-top: 0;
+  }
+
+  .message-box-div img{
+    width:18rem;
+    margin-left: 18%;
+    padding-left: 3rem;
+  }
+
+  .message-box-div h2,.message-box-div h3{
+    width: 30rem;
+    font-size:14px;
+    left: 10%;
+    height: 20px;
+  }
+
+  .div-mensaje{
+    width: 28rem;
+    height: 25rem;
+    top: 2rem;
+    left:2rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar {
+    top:28rem;
+  }
+
+  .btn-limpar{
+    top:32rem;
+  }
+
+  .btn-copiar,.btn-limpar {
+    line-height: 3px;
+    font-size:14px;
+    width:28rem;
+    height: 20px;
+    left: 1rem;
+  }
+
+  .icones.sociais img{
+    background: transparent;
+  }
+
+  .rodape-prin {
+    font-size:14px;
+    top: 42rem;
+    left: 5%;
+  }
+
+  .rodape-prin span {
+    width:30%;
+    line-height: 40px; /* Mesma altura do rodapé */
+  }
+}
+/* ========================================================================= */
+
+@media only screen and (min-width: 2778px) and (max-width: 3040px){
+  .logo{
+    top: 0.3rem;
+    width:6%;
+    left:0;
+  }
+
+  .text-input, .div-mensaje {
+    font-size: 16px;
+  }
+
+  .text-input{
+    top: 6rem;
+    width: 40rem;
+    height: 18rem;
+    left: 9rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    top: 25rem;
+    left:9rem;
+  }
+
+  ::placeholder, label {
+    font-size: 14px;
+  }
+
+  .botones-div{
+    flex-direction: row;
+    top:27rem;
+    left:9rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    line-height: 3px;
+    font-size:14px;
+    margin-top:10px;
+    margin-left: 0;
+    height:20px;
+    width:19.5rem;
+  }
+
+  .message-box{
+    width: 32rem;
+    height:37rem;
+    top: 1rem;
+    left:65rem;
+    padding-top: 0;
+  }
+
+  .message-box-div img{
+    width:18rem;
+    margin-left: 18%;
+    padding-left: 3rem;
+  }
+
+  .message-box-div h2,.message-box-div h3{
+    width: 30rem;
+    font-size:14px;
+    left: 10%;
+    height: 20px;
+  }
+
+  .div-mensaje{
+    width: 28rem;
+    height: 25rem;
+    top: 2rem;
+    left:2rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar {
+    top:28rem;
+  }
+
+  .btn-limpar{
+    top:32rem;
+  }
+
+  .btn-copiar,.btn-limpar {
+    line-height: 3px;
+    font-size:14px;
+    width:28rem;
+    height: 20px;
+    left: 1rem;
+  }
+
+  .icones.sociais img{
+    background: transparent;
+  }
+
+  .rodape-prin {
+    font-size:14px;
+    top: 42rem;
+    left: 5%;
+  }
+
+  .rodape-prin span {
+    width:30%;
+    line-height: 40px; /* Mesma altura do rodapé */
+  }
+}
+/* ========================================================================= */
+
+@media only screen and (min-width: 3200px) and (max-width: 3300px){
+  .logo{
+    top: 0.3rem;
+    width:6%;
+    left:0;
+  }
+
+  .text-input, .div-mensaje {
+    font-size: 20px;
+  }
+
+  .text-input{
+    top: 8rem;
+    width: 45rem;
+    height: 18rem;
+    left: 10rem;
+    word-wrap: break-word;
+  }
+
+  .form-group{
+    top: 27rem;
+    left:10rem;
+  }
+
+  ::placeholder, label {
+    font-size: 18px;
+  }
+
+  .botones-div{
+    flex-direction: row;
+    top:30rem;
+    left:10rem;
+  }
+
+  .btn-criptografar,.btn-descriptografar {
+    line-height: 3px;
+    font-size:18px;
+    margin-top:10px;
+    margin-left: 0;
+    height:20px;
+    width:22rem;
+  }
+
+  .message-box{
+    width: 38rem;
+    height:44rem;
+    top: 1rem;
+    left:72rem;
+    padding-top: 0;
+  }
+
+  .message-box-div img{
+    width:18rem;
+    margin-left: 18%;
+    padding-left: 3rem;
+  }
+
+  .message-box-div h2,.message-box-div h3{
+    width: 30rem;
+    font-size:14px;
+    left: 10%;
+    height: 20px;
+  }
+
+  .div-mensaje{
+    width: 34rem;
+    height: 29rem;
+    top: 2rem;
+    left:2rem;
+    word-wrap: break-word;
+  }
+
+  .btn-copiar {
+    top:32rem;
+  }
+
+  .btn-limpar{
+    top:36rem;
+  }
+
+  .btn-copiar,.btn-limpar {
+    line-height: 3px;
+    font-size:18px;
+    width:34rem;
+    height: 20px;
+    left: 1rem;
+  }
+
+  .icones.sociais img{
+    background: transparent;
+  }
+
+  .rodape-prin {
+    font-size:14px;
+    top: 50rem;
+    left: 5%;
+  }
+
+  .rodape-prin span {
+    width:30%;
+    line-height: 40px; /* Mesma altura do rodapé */
+  }
 }
